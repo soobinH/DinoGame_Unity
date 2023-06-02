@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4209621345601799706}
   - component: {fileID: 4209621345601799705}
   - component: {fileID: 4209621345601799704}
-  - component: {fileID: 6027843698817838793}
+  - component: {fileID: 214433706631806293}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Obstacle
@@ -115,7 +115,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9583333, y: 0.8333, z: 0.2}
   m_Center: {x: 0, y: -0.083, z: 0}
---- !u!114 &6027843698817838793
+--- !u!114 &214433706631806293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,6 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4209621345601799711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f55da4e234d56e4780b9c12a2cd1796, type: 3}
+  m_Script: {fileID: 11500000, guid: 623b47b228fc5094c9c33ad8eec4b53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
