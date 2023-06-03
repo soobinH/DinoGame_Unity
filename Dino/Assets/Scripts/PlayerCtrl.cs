@@ -45,7 +45,6 @@ public class PlayerCtrl : MonoBehaviour
     private void Update()
     {
 
-        // 기본 스프라이트 설정
 
          // HP 화면에 표시
         HP.text = health.ToString();
