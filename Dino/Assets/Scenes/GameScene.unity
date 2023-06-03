@@ -479,6 +479,8 @@ MonoBehaviour:
     spawnChance: 0.1
   - prefab: {fileID: 4209621345601799711, guid: 4fbba231b28836143ba7d63336532dd7, type: 3}
     spawnChance: 0.2
+  - prefab: {fileID: 4209621345601799711, guid: c364268213a86ff48914d5c7a18419df, type: 3}
+    spawnChance: 0.3
   minSpawnRate: 1
   maxSpawnRate: 2
 --- !u!4 &479715030
@@ -666,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256, y: -24}
+  m_AnchoredPosition: {x: -277.37, y: -24}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &507619822
@@ -698,8 +700,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283650899
-  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
+    rgba: 2825875311
+  m_fontColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0.65882355}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1124,9 +1126,9 @@ RectTransform:
   m_Father: {fileID: 1185116981}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -673, y: 497}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1307, y: -24}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &754347071
@@ -1158,8 +1160,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190220
-  m_fontColor: {r: 0.54901963, g: 0, b: 0, a: 1}
+    rgba: 2550136972
+  m_fontColor: {r: 0.54901963, g: 0, b: 0, a: 0.59607846}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1540,7 +1542,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1980, y: 1080}
+  m_ReferenceResolution: {x: 1280, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -1627,8 +1629,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.45833334
+  m_Height: 0
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1713,6 +1715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466696d727add7c4ea5bac57b0c88b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slide: {fileID: -1050294647, guid: c0b4c3d6c8ac8944e80dfa8056ee4def, type: 3}
+  Walk: {fileID: 21300000, guid: 3a57296d4eb0b754ab7a71f6f249c1f0, type: 3}
   HP: {fileID: 754347071}
   JumpSound: {fileID: 1048249903}
   GameOverSound: {fileID: 609913269}
@@ -1729,10 +1733,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418119716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc32449ef75bfad428442cb46ba33296, type: 3}
+  m_Script: {fileID: 11500000, guid: 610617ae138a1b142acdc69c835c94c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
+  SlidingSprites:
+  - {fileID: -1050294647, guid: c0b4c3d6c8ac8944e80dfa8056ee4def, type: 3}
+  - {fileID: 146683877, guid: c0b4c3d6c8ac8944e80dfa8056ee4def, type: 3}
+  CommonSprites:
   - {fileID: 21300000, guid: 3a57296d4eb0b754ab7a71f6f249c1f0, type: 3}
   - {fileID: 21300000, guid: 37e0db0dab85f714a8146c0b36448ee4, type: 3}
 --- !u!1 &1635730304
@@ -1802,8 +1809,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283650899
-  m_fontColor: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
+    rgba: 2825875311
+  m_fontColor: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 0.65882355}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1903,9 +1910,9 @@ RectTransform:
   m_Father: {fileID: 1185116981}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -780, y: 497}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1399.27, y: -24}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1941283971
@@ -1937,8 +1944,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190220
-  m_fontColor: {r: 0.5471698, g: 0, b: 0, a: 1}
+    rgba: 2550136972
+  m_fontColor: {r: 0.5471698, g: 0, b: 0, a: 0.59607846}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
